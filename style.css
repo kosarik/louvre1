@@ -1,0 +1,1046 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0;
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* forum-regular - latin */
+@font-face {
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/forum-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/forum-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/roboto-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* header styles start */
+html{
+  scroll-behavior: smooth;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1;
+}
+.header-nav{
+  padding: 15px 0px;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.header-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header-item {
+  padding-right: 75px;
+  font-family: Roboto;
+  font-size: 21px;
+}
+.header-item:last-child {
+  padding-right: 0;
+}
+.header-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+  opacity: 0.75;
+}
+.header-logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(201, 174, 174);
+}
+/* header styles end */
+
+/* Intro styles start */
+.welcome {
+  padding-top: 200px;
+
+  color: white;
+  background: url(/kosarik-JSFEPRESCHOOL/museum/assets/img/louvre-building.jpg)
+  #000 no-repeat right bottom;
+  background-size: 1215px 750px;
+    
+
+  min-width: 1216px;
+  min-height: 750px;
+}
+.intro-title-1 {
+  font-family: "Forum";
+  max-width: 600px;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.intro-title-2 {
+  max-width: 600;
+  font-size: 80px;
+  line-height: 90px;
+  font-family: "Forum";
+  margin-bottom: 26px;
+  letter-spacing: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.intro-title-3 {
+  max-width: 441px;
+  font-family: "Roboto";
+  font-size: 27px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  margin-bottom: 77px;
+}
+.discover-button {
+  padding: 25px 67px;
+  background: #710707;
+  border-radius: 10px;
+  font-family: Roboto;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 0;
+}
+.discover-button:hover,
+.discover-button:active,
+.discover-button:focus {
+  background: #500b0b;
+}
+
+/* Intro styles end */
+/* Virtual tour start */
+.visiting {
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+.virtual-title-text {
+  text-transform: uppercase;
+  color: #9d8665;
+  letter-spacing: 5px;
+  font-size: 80px;
+  line-height: 90px;
+  font-family: "Forum";
+  margin-bottom: 25px;
+}
+.virtual-title-line {
+  padding-top: 3px;
+  background-color: #710707;
+  margin-bottom: 75px;
+}
+.virtual-tour-grid {
+  display: grid;
+  row-gap: 77px;
+  column-gap: 77px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-card-text1 {
+  font-size: 32px;
+  line-height: 35px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Forum";
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.grid-line {
+  padding-top: 2px;
+  margin-bottom: 10px;
+  background-color: #710707;
+  width: 300px;
+}
+.grid-card-text2 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 25px;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.grid-card-text3 {
+  color: #000000;
+  font-size: 17px;
+  line-height: 20px;
+  font-family: "Roboto";
+}
+/* Virtual tour end */
+/* picture explore start */
+.picture-explore-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #000;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: top;
+  justify-content: space-between;
+}
+.picture-explore-text {
+  margin-right: 64px;
+  display: flex;
+  flex-wrap: nowrap;
+
+  flex-direction: column;
+}
+.picture-explore-title {
+  white-space: nowrap;
+  font-family: "Forum";
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 110px;
+}
+.picture-explore-p {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.picture-explore-p:last-child {
+  margin-bottom: 0;
+}
+.picture-explore-pic {
+  padding-top: 15px;
+}
+.explore {
+  background-color: #000;
+}
+/* picture explore end */
+/* video journey start */
+.video {
+  margin-top: 90px;
+  padding-bottom: 75px;
+  
+}
+.video-controls{
+  background-color: #000;
+padding-top: 28px;
+padding-bottom: 27px;
+display: flex; flex-wrap: wrap;
+}
+.video-journey-title{
+  font-size: 80px;
+line-height: 90px;
+font-family: "Forum";
+letter-spacing: 5px;
+text-transform: uppercase;
+padding-right: 115px;
+padding-top: 40px;
+color: #9D8665;
+}
+.video-journey-p{
+  font-size: 22px;
+line-height: 38px;
+font-family: "Roboto";
+color: #000000;
+padding-top: 43px;
+}
+.video-journey-text{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.video-controls-playButton{
+  padding-left: 40px;
+}
+.video-controls-playButton:hover,
+.video-controls-playButton:active,
+.video-controls-playButton:focus{
+  opacity: 0.75;
+}
+.video-controls-playButton:last-child{
+  padding-right: 40px;
+}
+.video-controls-scroll1{
+  margin-left: 40px;
+  width: 820px;
+}
+.video-controls-scroll2{
+  margin-left: 20px;
+  width: 155px;
+}
+/* video journey end */
+/* buy tickets start */
+.tickets{
+  background: #030303;
+  
+
+}
+.buy-tickets-title{
+  padding-top: 75px;
+  padding-bottom: 25px;
+  font-size: 80px;
+line-height: 90px;
+font-family: "Forum";
+letter-spacing: 5px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.buy-tickets-line{
+  background: #710707;
+  height: 3px;
+  margin-bottom: 75px;
+}
+.buy-tickets-main{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 75px;
+  background-color: #000;
+}
+.buy-tickets-type{
+  padding-left: 100px;
+  padding-right: 265px;
+}
+.buy-tickets-type-header{
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  font-family: "Roboto";
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+.buy-tickets-type-list{
+  font-size: 21px;
+line-height: 25px;
+font-family: "Roboto";
+color: #FFFFFF;
+}
+.buy-tickets-type-p{ 
+margin-bottom: 50px;
+width: 220px;
+display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buy-tickets-amount-header{
+  font-size: 28px;
+line-height: 33px;
+font-family: "Roboto";
+color: #FFFFFF;
+padding-bottom: 14px;
+}
+.buy-tickets-amount-p{
+  font-size: 22px;
+line-height: 26px;
+font-family: "Roboto";
+color: #FFFFFF;
+padding-bottom: 14px;
+
+}
+.container {
+  min-width: 250px;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+width: 17px;
+height: 17px;
+left: 0px;
+top: 4px;
+
+border: 2px solid #FFFFFF;
+box-sizing: border-box;
+  border-radius: 50%;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  width: 7px;
+  height: 7px;
+  left: 3px;
+  top: 3px;
+	border-radius: 50%;
+	background: white;
+}
+.number {
+  all: unset;
+  width: 3em;
+  text-align: center;
+}
+.buy-tickets-amount-button1{width: 150px;
+  display: flex; flex-wrap: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 3px solid #FFFFFF;
+  font-size: 32px;
+line-height: 37px;
+font-family: "Roboto";
+margin-bottom: 35px;
+
+color: #FFFFFF;
+}
+.buy-tickets-amount-button2{width: 150px;
+  display: flex; flex-wrap: nowrap;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+  border: 3px solid #FFFFFF;
+  font-size: 32px;
+line-height: 37px;
+font-family: "Roboto";
+color: #FFFFFF;
+}
+.buy-tickets-total{
+  font-size: 28px;
+line-height: 33px;
+font-family: "Roboto";
+letter-spacing: 1.65px;
+margin-bottom: 50px;
+color: #FFFFFF;
+}
+.buy-tickets-minus-or-plus-button{
+  font-size: 32px;
+line-height: 37px;
+font-family: "Roboto";
+text-align: center;
+color: #FFFFFF;
+background-color: #000;
+border: 0;
+}
+.buy-tickets-button-buy{
+  background: #FFFFFF;
+border-radius: 2px;
+font-size: 22px;
+line-height: 26px;
+font-family: "Roboto";
+text-align: center;
+letter-spacing: 2px;
+width: 175px;
+height: 50px;
+color: #000000;
+border: 0;
+}
+.buy-tickets-button-buy:active,
+.buy-tickets-button-buy:focus,
+.buy-tickets-button-buy:hover{
+  background: #dad5d5;
+}
+/* buy tickets end */
+/* contacts start */
+
+.contacts-title{
+  font-size: 80px;
+line-height: 90px;
+font-family: "Forum";
+letter-spacing: 5px;
+text-transform: uppercase;
+padding-bottom: 25px;
+color: #9D8665;
+}
+.contacts-line{
+  height: 3px;
+  margin-bottom: 75px;
+  background: #710707;
+}
+.contacts-flex{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.contacts-head{
+  padding-top: 75px;
+}
+.contacts-header{
+  padding-bottom: 35px;
+  font-size: 28px;
+line-height: 33px;
+font-family: "Roboto";
+color: #000000;
+}
+.contacts-p{
+  padding-bottom: 20px;
+  font-size: 22px;
+line-height: 26px;
+font-family: "Roboto";
+color: #000000;
+}
+
+/* contacts end */
+/* footer start */
+.footer{
+  background-color: #000;
+}
+.footer-nav{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #000;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.footer-louvre{
+  font-size: 28px;
+line-height: 50px;
+font-family: "Forum";
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+padding-right: 215px;
+}
+.footer-welcome{
+  font-size: 21px;
+line-height: 50px;
+font-family: "Roboto";
+letter-spacing: 2px;
+padding-right: 147px;
+color: #FFFFFF;
+
+}
+.footer-video{
+  font-size: 21px;
+line-height: 50px;
+font-family: "Roboto";
+letter-spacing: 2px;
+padding-right: 390px;
+color: #FFFFFF;
+}
+.footer-links{
+  display: flex;
+  align-items: flex-end;
+  background-color: #000;
+}
+.footer-im1{
+  padding-top: 15px;
+}
+.footer-im2{
+  padding-top: 13px;
+}
+.footer-im3{
+  padding-top: 12px;
+}
+.footer-im5{
+  padding-top: 12px;
+}
+.footer-button{
+  border-radius: 50px;
+  width: 48px;
+min-height: 48px;
+  border: 1px solid #666666;
+  box-sizing: border-box;
+filter: drop-shadow(0px 0px 0px #666666);
+border-radius: 50px;
+margin-right: 24px;
+text-align: center;
+vertical-align: middle;
+height:auto;
+    position: relative;
+    overflow: hidden;
+}
+.footer-button:last-child{
+  margin-right: 0px;
+}
+
+.footer-li:hover,
+.footer-li:active,
+.footer-li:focus{
+  opacity: 0.75;
+  cursor: pointer;
+}
+/* footer end */
