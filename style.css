@@ -518,19 +518,190 @@ html{
 }
 /* header styles end */
 
+
+/* Slider start */
+.welcome-slider{
+  display: block;
+}
+.slider-controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.carousel {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.arrows{
+  margin-right: 30px;
+  margin-top: 8px;
+}
+
+.number{
+  display: flex;
+}
+
+.no-number{
+  display: none;
+}
+
+.slider-number{
+  display: inline-block;
+}
+
+.slider-cubics{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 56px;
+}
+.cubic-color{
+  color: #D2B183;
+}
+.cubic{
+  padding-right: 24px;
+}
+
+.cubic:last-child{padding-right: 0;}
+
+.active,
+.next {
+  display: inline-block;
+}
+.active-cube{
+  color: #D2B183;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.project-image{
+  margin-bottom: 60px;
+}
+
+.control {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.control-left{
+  margin-right: 20px;
+}
+
+.arrows{display: flex;
+justify-content: space-between;
+width: 75px;
+margin-left: 56px;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 28px;
+height: 8px;
+}
+.arrow.left{
+  bottom: 7px;
+}
+
+.arrow.right {
+  transform: rotate(-180deg);
+
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .control > .arrow {
+    display: none;
+  }
+
+  .project-name {
+    display: none;
+  }
+}
+/* Slider end */
 /* Intro styles start */
 .welcome {
   padding-top: 200px;
-
+background-color: #000;
   color: white;
-  background: url(assets/img/louvre-building.jpg)
-  #000 no-repeat right bottom;
-  background-size: 1215px 750px;
     
 
   min-width: 1216px;
   min-height: 750px;
 }
+
+.wrapper.welcome-start{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .intro-title-1 {
   font-family: "Forum";
   max-width: 600px;
