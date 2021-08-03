@@ -848,7 +848,7 @@ background-color: #000;
 /* picture explore end */
 /* video journey start */
 .video {
-  margin-top: 90px;
+  margin-top: 75px;
   padding-bottom: 75px;
   
 }
@@ -865,19 +865,20 @@ font-family: "Forum";
 letter-spacing: 5px;
 text-transform: uppercase;
 padding-right: 115px;
-padding-top: 40px;
+padding-bottom: 80px;
 color: #9D8665;
 }
 .video-journey-p{
   font-size: 22px;
-line-height: 38px;
+line-height: 40px;
 font-family: "Roboto";
 color: #000000;
-padding-top: 43px;
+
 }
 .video-journey-text{
   display: flex;
   flex-wrap: nowrap;
+
 }
 .video-controls-playButton{
   padding-left: 40px;
@@ -899,9 +900,67 @@ padding-top: 43px;
   width: 155px;
 }
 /* video journey end */
+/* video slider start */
+.video-slider{display: flex;
+justify-content: space-between;
+}
+.video-slide{
+ padding-top: 40px;
+}
+.video-controls-slider{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+  padding-top: 47px;
+  width: 205px;
+  text-align: center;
+
+}
+.sk{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+.video-arrow-left{
+  cursor: pointer;
+}
+.video-arrow-right{
+  cursor: pointer;
+}
+.slider-active{
+  background-image: url(./assets/img/video-dot-black.png);
+}
+/* video slider end */
+/* art gallery start */
+.black{
+  background-color: #000;
+}
+.gallery-text{
+  padding-top: 90px;
+  padding-bottom: 60px;
+  font-family: "Forum";
+  font-size: 80px;
+line-height: 90px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.gallery{
+  overflow-y: hidden;
+  height: 1966px;
+
+}
+.gallery-inner{
+  column-count: 3;
+  row-gap: 36px;
+  column-gap: 24px;
+  height: 5000px;
+}
+/* art gallery end */
 /* buy tickets start */
 .tickets{
-  background: #030303;
+  background: white;
   
 
 }
@@ -914,7 +973,7 @@ font-family: "Forum";
 letter-spacing: 5px;
 text-transform: uppercase;
 
-color: #FFFFFF;
+color: black;
 }
 .buy-tickets-line{
   background: #710707;
@@ -925,7 +984,7 @@ color: #FFFFFF;
   display: flex;
   flex-wrap: nowrap;
   padding-bottom: 75px;
-  background-color: #000;
+  background-color: white;
 }
 .buy-tickets-type{
   padding-left: 100px;
@@ -936,14 +995,14 @@ color: #FFFFFF;
   font-size: 28px;
   line-height: 33px;
   font-family: "Roboto";
-  color: #FFFFFF;
+  color: black;
   margin-bottom: 50px;
 }
 .buy-tickets-type-list{
   font-size: 21px;
 line-height: 25px;
 font-family: "Roboto";
-color: #FFFFFF;
+color: black;
 }
 .buy-tickets-type-p{ 
 margin-bottom: 50px;
@@ -963,14 +1022,14 @@ display: block;
   font-size: 28px;
 line-height: 33px;
 font-family: "Roboto";
-color: #FFFFFF;
+color: black;
 padding-bottom: 14px;
 }
 .buy-tickets-amount-p{
   font-size: 22px;
 line-height: 26px;
 font-family: "Roboto";
-color: #FFFFFF;
+color: black;
 padding-bottom: 14px;
 
 }
@@ -988,14 +1047,14 @@ padding-bottom: 14px;
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
+
 .container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
+
 .checkmark {
   position: absolute;
 width: 17px;
@@ -1003,31 +1062,31 @@ height: 17px;
 left: 0px;
 top: 4px;
 
-border: 2px solid #FFFFFF;
+border: 2px solid black;
 box-sizing: border-box;
   border-radius: 50%;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
+
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
+
 .container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
+
 .container .checkmark:after {
   width: 7px;
   height: 7px;
   left: 3px;
   top: 3px;
 	border-radius: 50%;
-	background: white;
+	background: black;
 }
 .number {
   all: unset;
@@ -1038,24 +1097,24 @@ box-sizing: border-box;
   display: flex; flex-wrap: nowrap;
   padding-left: 15px;
   padding-right: 15px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid black;
   font-size: 32px;
 line-height: 37px;
 font-family: "Roboto";
 margin-bottom: 35px;
 
-color: #FFFFFF;
+color: black;
 }
 .buy-tickets-amount-button2{width: 150px;
   display: flex; flex-wrap: nowrap;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 50px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid black;
   font-size: 32px;
 line-height: 37px;
 font-family: "Roboto";
-color: #FFFFFF;
+color: black;
 }
 .buy-tickets-total{
   font-size: 28px;
@@ -1063,19 +1122,19 @@ line-height: 33px;
 font-family: "Roboto";
 letter-spacing: 1.65px;
 margin-bottom: 50px;
-color: #FFFFFF;
+color: black;
 }
 .buy-tickets-minus-or-plus-button{
   font-size: 32px;
 line-height: 37px;
 font-family: "Roboto";
 text-align: center;
-color: #FFFFFF;
-background-color: #000;
+color: black;
+background-color: white;
 border: 0;
 }
 .buy-tickets-button-buy{
-  background: #FFFFFF;
+  background: black;
 border-radius: 2px;
 font-size: 22px;
 line-height: 26px;
@@ -1084,15 +1143,91 @@ text-align: center;
 letter-spacing: 2px;
 width: 175px;
 height: 50px;
-color: #000000;
+color: white;
 border: 0;
 }
 .buy-tickets-button-buy:active,
 .buy-tickets-button-buy:focus,
 .buy-tickets-button-buy:hover{
-  background: #dad5d5;
+  background: #2d2a2a;
 }
 /* buy tickets end */
+/* booking tickets start */
+.two-columns{
+  display: flex; 
+}
+.two-column{
+  border: 1 px solid black;
+  padding: 26px 35px 26px 33px;
+}
+.tc{
+  display: flex;
+  justify-content: space-between;
+}
+.tcline{
+  display: inline-block;
+}
+.overview{
+font-family: "Roboto";
+font-size: 32px;
+line-height: 37px;
+color: #272727;
+}
+.tour{
+  font-family: "Roboto";
+  font-size: 22px;
+line-height: 26px;
+color: #740C11;
+opacity: 0.9;
+}
+.booking-tickets{
+  font-family: "Forum";
+margin-bottom: 14px;
+font-size: 50px;
+line-height: 55px;
+text-transform: uppercase;
+color: #9D8665;
+}
+.tickets1{
+  margin-bottom: 21px;
+}
+.entry-ticket{
+  border: 1px solid black;
+  padding: 10px 10px 19px 10px;
+}
+.entry-ticket-p{
+  font-family: "Forum";
+  font-size: 18px;
+line-height: 20px;
+margin-bottom: 20px;
+text-transform: capitalize;
+
+color: #9D8665;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #740C11;
+}
+.tour-to-louvre{
+  font-family: "Roboto";
+margin-bottom: 11px;
+font-size: 18px;
+line-height: 21px;
+color: #710707;
+border-bottom: 2px solid #740C11;
+}
+.time{
+  display: inline-block;
+}
+/* booking tickets end */
+/* parallax start */
+.parallax{
+  width: 100%;
+  height: 400px;
+  background-image: url("./assets/img/parallax1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+/* parallax end */
 /* contacts start */
 
 .contacts-title{
