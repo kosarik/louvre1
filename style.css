@@ -850,7 +850,7 @@ background-color: #000;
 .video {
   margin-top: 75px;
   padding-bottom: 75px;
-  
+  font-size: 0
 }
 .video-controls{
   background-color: #000;
@@ -901,11 +901,31 @@ color: #000000;
 }
 /* video journey end */
 /* video slider start */
+.to-left1{
+  animation-name: left;
+}
+.from-right{
+  animation-name: right;
+}
+.to-right1 {
+  animation-name: right;
+  animation-direction: reverse;
+}
 .video-slider{display: flex;
-justify-content: space-between;
+  justify-content: space-between;
+  }
+.from-left1 {
+  animation-name: left;
+  animation-direction: reverse;
+}
+.active1, .next1{
+  display: inline-block;
 }
 .video-slide{
+
+animation: 0.5s ease-in-out;
  padding-top: 40px;
+ 
 }
 .video-controls-slider{
   flex-direction: row;
@@ -922,14 +942,11 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
 }
-.video-arrow-left{
+.video-arrow.left{
   cursor: pointer;
 }
-.video-arrow-right{
+.video-arrow.right{
   cursor: pointer;
-}
-.slider-active{
-  background-image: url(./assets/img/video-dot-black.png);
 }
 /* video slider end */
 /* art gallery start */
@@ -961,8 +978,6 @@ color: #FFFFFF;
 /* buy tickets start */
 .tickets{
   background: white;
-  
-
 }
 .buy-tickets-title{
   padding-top: 75px;
@@ -982,13 +997,14 @@ color: black;
 }
 .buy-tickets-main{
   display: flex;
+  justify-content: space-between;
   flex-wrap: nowrap;
   padding-bottom: 75px;
   background-color: white;
 }
 .buy-tickets-type{
   padding-left: 100px;
-  padding-right: 265px;
+ padding-right: 145px;
 }
 .buy-tickets-type-header{
   font-weight: 500;
@@ -1017,6 +1033,12 @@ display: block;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.buy-tickets-amount{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content: right;
 }
 .buy-tickets-amount-header{
   font-size: 28px;
@@ -1093,8 +1115,8 @@ box-sizing: border-box;
   width: 3em;
   text-align: center;
 }
-.buy-tickets-amount-button1{width: 150px;
-  display: flex; flex-wrap: nowrap;
+.buy-tickets-amount-button1{max-width: 150px;
+  display: flex; flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
   border: 3px solid black;
@@ -1102,11 +1124,10 @@ box-sizing: border-box;
 line-height: 37px;
 font-family: "Roboto";
 margin-bottom: 35px;
-
 color: black;
 }
-.buy-tickets-amount-button2{width: 150px;
-  display: flex; flex-wrap: nowrap;
+.buy-tickets-amount-button2{max-width: 150px;
+  display: flex; flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 50px;
