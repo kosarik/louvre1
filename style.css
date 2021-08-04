@@ -1178,16 +1178,115 @@ border: 0;
   display: flex; 
 }
 .two-column{
-  border: 1 px solid black;
+  border: 1px solid black;
   padding: 26px 35px 26px 33px;
+}
+.one-column{
+  width: 400px;
+  margin-right: 40px;
 }
 .tc{
   display: flex;
   justify-content: space-between;
 }
-.tcline{
-  display: inline-block;
+.tccard1{
+  max-width: 360px;
+  margin-top: 18px;
+  background: #BCBCBC;
+  z-index: 5;
 }
+.tccard1-text{
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-family: "Roboto";
+  font-size: 11px;
+line-height: 13px;
+color: #161615;
+}
+.tcline{
+  display: block;
+ padding-bottom: 7px;
+}
+.tcline:first-child{
+  padding-top: 11px;
+}
+.tcline:last-child{
+  padding-bottom: 0px;
+}
+.tc2{
+  border-top: 1px solid #740C11;
+  
+}
+.tc2pic{
+  margin-left: 100px;
+}
+.tctotal{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 13px;
+  font-family: "Roboto";
+  font-size: 32px;
+line-height: 37px;
+color: #030303;
+}
+.tccard2{
+  display: block;
+  width: 360px;
+ 
+  z-index: 1;
+  background: #939393;
+  margin-right: 32px;
+  margin-left: 136px;
+  margin-top: -140px;
+  padding-bottom: 25px;
+}
+.yearr{
+  z-index: 1;
+}
+.tccard2-line{
+  z-index: 1;
+  width: 360px;
+  background: #161615;
+  height: 48px;
+ margin-bottom: 11px;
+
+}
+.tccard2-input{
+  width: 65px;
+  margin-bottom: 6px;
+  margin-left: 270px;
+}
+.tccard2-text{
+
+  margin-left: 271px;
+  position: relative;
+  text-align: left;
+  font-family: "Roboto";
+  font-size: 9px;
+line-height: 11px;
+width: 48px;
+color: #161615;
+
+margin-right: 41px;
+}
+.cvc{
+  text-align: right;
+  font-family: "Roboto";
+  font-size: 13px;
+line-height: 15px;
+color: #161615;
+margin-bottom: 6px;
+margin-right: 35px;
+}
+.basic1{
+  padding-top: 7px;
+}
+.basic2{
+  padding-top: 6px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #740C11;
+}
+
 .overview{
 font-family: "Roboto";
 font-size: 32px;
@@ -1211,6 +1310,49 @@ color: #9D8665;
 }
 .tickets1{
   margin-bottom: 21px;
+}
+.tccard1-text2{
+  margin-bottom: 7px;
+  font-family: "Roboto";
+  font-size: 11px;
+line-height: 13px;
+color: #161615;
+}
+.tccard11{
+  z-index: 5;
+display: flex;
+justify-content: space-between;
+margin-left: 23px;
+}
+.tccard112{
+  display: block;
+  margin-top: 32px;
+  margin-left: 48px;
+  margin-right: 23px;
+}
+.visa{
+margin-bottom: 17px;
+}
+.tccard1-input{
+  margin-bottom: 10px;
+}
+.tccard1-input2{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.tccard1-text3{
+  margin-left: 23px;
+  margin-bottom: 8px;
+  font-family: "Roboto";
+  font-size: 11px;
+line-height: 13px;
+color: #161615;
+}
+.tccard1-input3{
+  margin-left: 23px;
+  margin-bottom: 19px;
+  min-width: 312px;
 }
 .entry-ticket{
   border: 1px solid black;
@@ -1237,6 +1379,17 @@ border-bottom: 2px solid #740C11;
 }
 .time{
   display: inline-block;
+}
+.post-button{
+  margin-left: 275px;
+  width: 220px;
+  height: 45px;
+  font-family: "Roboto";
+  font-size: 20px;
+line-height: 23px;
+color: #FFFFFF;
+background: #710707;
+margin-top: 25px;
 }
 /* booking tickets end */
 /* parallax start */
