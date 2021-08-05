@@ -12,20 +12,41 @@
          <div class="wrapper">
         <div class="two-columns">
             <div class="one-column">
+                <div class="one-column-text">
                 <img src="./assets/svg/logo-beige.svg" alt="louvre logo">
                 <h1 class="booking-tickets">booking tickets</h1>
                 <p class="tour-to-louvre">Tour to Louvre</p>
+            </div>
+            <div class="one-column-input">
                 <div class="time">
-                    <input type="date">
+                    <input type="date" class="date-tickets">
                     <input type="time">
                 </div>
                 <input type="text" class="tickets1">
                 <input type="text" class="tickets1">
                 <input type="text" class="tickets1">
                 <input type="text" class="tickets1">
+            </div>
                 <div class="entry-ticket">
                     <p class="entry-ticket-p">Entry Ticket</p>
-                    <!-- copy code from buy tickets -->
+                    <div class="entry-ticket-flex">
+                        <div class="entry-ticket-text">
+                            <div class="entry-ticket-text1">Basic 18+ (20 €)</div>
+                            <div class="entry-ticket-text2">Senior 65+ (10 €)</div>
+                        </div>
+                        <div class="entry-ticket-button">
+                            <div class="entry-ticket-div1"><button class="buy-tickets-minus-or-plus-button1" type="button"
+                                onclick="this.nextElementSibling.stepDown()">-</button>
+                              <input type="number" min="0" max="100" value="1" readonly class="number">
+                              <button type="button" class="buy-tickets-minus-or-plus-button1"
+                                onclick="this.previousElementSibling.stepUp()">+</button></button></div>
+                            <div class="entry-ticket-div2"><button class="buy-tickets-minus-or-plus-button1" type="button"
+                                onclick="this.nextElementSibling.stepDown()">-</button>
+                              <input type="number" min="0" max="100" value="1" readonly class="number">
+                              <button type="button" class="buy-tickets-minus-or-plus-button1"
+                                onclick="this.previousElementSibling.stepUp()">+</button></button></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="two-column">

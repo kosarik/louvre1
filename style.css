@@ -461,7 +461,11 @@ textarea {
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("fonts/roboto-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 /* header styles start */
+.burger-icon{
+  display: none;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -1189,6 +1193,9 @@ border: 0;
   display: flex;
   justify-content: space-between;
 }
+.date-tickets{
+  margin-right: 21px;
+}
 .tccard1{
   max-width: 360px;
   margin-top: 18px;
@@ -1311,6 +1318,30 @@ color: #9D8665;
 .tickets1{
   margin-bottom: 21px;
 }
+.entry-ticket-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.entry-ticket-text{
+  font-family: "Roboto";
+  font-size: 18px;
+line-height: 21px;
+color: #030303;
+}
+.entry-ticket-text1{
+  margin-bottom: 22px;
+}
+.entry-ticket-button1{
+  margin-bottom: 14px;
+  width: 111px;
+  height: 28px;
+}
+.entry-ticket-button2{
+  width: 111px;
+  height: 28px;
+}
+
 .tccard1-text2{
   margin-bottom: 7px;
   font-family: "Roboto";
@@ -1369,9 +1400,43 @@ color: #9D8665;
   padding-bottom: 3px;
   border-bottom: 1px solid #740C11;
 }
+.entry-ticket-div1{
+  margin-bottom: 14px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    border: 1px solid black;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: "Roboto";
+  
+    color: black;
+}
+.entry-ticket-div2{
+  
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+
+  font-size: 18px;
+line-height: 21px;
+  font-family: "Roboto";
+ 
+  color: black;
+}
+.buy-tickets-minus-or-plus-button1{
+  font-size: 18px;
+line-height: 21px;
+    font-family: "Roboto";
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: 0;
+}
 .tour-to-louvre{
   font-family: "Roboto";
-margin-bottom: 11px;
+  margin-bottom: 54px;
+padding-bottom: 11px;
 font-size: 18px;
 line-height: 21px;
 color: #710707;
@@ -1379,6 +1444,7 @@ border-bottom: 2px solid #740C11;
 }
 .time{
   display: inline-block;
+  margin-bottom: 22px;
 }
 .post-button{
   margin-left: 275px;
@@ -1524,3 +1590,160 @@ height:auto;
   cursor: pointer;
 }
 /* footer end */
+/* adaptive part start */
+/* 1024px start */
+@media (max-width: 1024px) {
+  /* header style start */
+  
+  .wrapper{
+    max-width: 1024px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .header-nav{
+    display: none;
+  }
+  .burger-icon{
+    display: block;
+    cursor: pointer;
+  padding-right: 20px;
+  }
+  /* header style end */
+  /* virtual tour start */
+  .virtual-tour-grid {
+    display: grid;
+    row-gap: 77px;
+    column-gap: 77px;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* virtual tour end */
+  /* buy-tickets start */
+  .buy-tickets-pic{
+    display: none;
+  }
+  .buy-tickets-amount{
+    margin-right: 124px;
+  }
+  .buy-tickets-title{
+    font-family: "Forum";
+    font-size: 50px;
+line-height: 75px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+  }
+  /* buy tickets end */
+  /* contacts start */
+  .contacts-map-img{
+    content: src="";
+  }
+  /* contacts end */
+}
+/* 1024px end */
+/* 420px start */
+@media (max-width: 420px) {
+/* intro start */
+.header{
+  height: 130px;
+}
+.header-wrapper{
+  padding-bottom: 0;
+}
+.wrapper{
+  max-width: 420px;
+}
+.intro-title-1{
+  font-family: "Forum";
+  font-size: 28px;
+line-height: 31px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.wrapper.welcome-start{
+  display: block;
+}
+/* intro end */
+/* virtual tour start */
+.virtual-title-text{
+  font-family: "Forum";
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+.virtual-title-line{
+  margin-bottom: 40px;
+}
+.virtual-tour-grid{
+  grid-template-columns: 1fr 1fr;
+}
+/* virtual tour end */
+/* picture explore start */
+.picture-explore-title{
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.picture-explore-p{
+  display: none;
+}
+/* picture explore end */
+/* video journey start */
+.video-journey-title{
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+.video-journey-p{
+  display: none;
+}
+/* video journey end */
+/* art gallery start */
+.gallery-text{
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+/* art gallery end */
+/* buy tickets start */
+.buy-tickets-title{
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+.buy-tickets-main{
+  display: block;
+}
+/* buy tickets end */
+/* contacts start */
+.contacts-title{
+  font-size: 28px;
+line-height: 42px;
+letter-spacing: 5px;
+text-transform: uppercase;
+color: #9D8665;
+}
+.contacts-flex{
+  display: block;
+}
+/* contacts end */
+/* footer start */
+.footer-nav{
+  display: block;
+}
+/* footer end */
+}
+/* 420px end */
+
+/* adaptive part end */
