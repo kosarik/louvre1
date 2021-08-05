@@ -1460,7 +1460,7 @@ margin-top: 25px;
 /* booking tickets end */
 /* parallax start */
 .parallax{
-  width: 100%;
+  max-width: 100%;
   height: 400px;
   background-image: url("./assets/img/parallax1.jpg");
   background-size: cover;
@@ -1512,6 +1512,10 @@ color: #000000;
 /* footer start */
 .footer{
   background-color: #000;
+}
+.footer-intro-flex{
+  display: flex;
+  justify-content: space-between;
 }
 .footer-nav{
   padding-top: 75px;
@@ -1641,17 +1645,134 @@ color: #9D8665;
   /* contacts end */
 }
 /* 1024px end */
+/* 768px start */
+@media (max-width: 768px) {
+  .wrapper{
+    max-width: 768px;
+  }
+  .header{
+    width: 768px;
+  }
+  /* intro start */
+  .intro-title-1{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+padding-bottom: 20px;
+  }
+.intro-title-3{
+  font-size: 20px;
+line-height: 23px;
+letter-spacing: 2px;
+}
+.discover-button{
+  display: none;
+}
+  /* intro end */
+  /* virtual tour start */
+  .visiting{
+    margin-top: 40px;
+  }
+  .virtual-title-text{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+  }
+  .virtual-title-line{
+    margin-bottom: 40px;
+  }
+  /* virtual tour end */
+  /* picture explore start */
+  .picture-explore-wrapper{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .picture-explore-title{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+  }
+  .picture-explore-p{
+    display: none;
+  }
+  /* picture explore end */
+  /* video journey start */
+  .video-journey-title{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+  }
+  .video-journey-p{
+    display: none;
+  }
+  .video{
+    margin-top: 40px;
+    padding-bottom: 55px;
+  }
+  .video-journey-title{
+    padding-bottom: 20px;
+  }
+  .video-controls-slider{
+    padding-bottom: 0;
+  }
+  /* video journey end */
+  /* art gallery start */
+  .gallery-text{
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+  .gallery-inner{
+    column-count: 2;
+    row-gap: 24px;
+  }
+  /* art gallery end */
+  /* buy tickets start */
+  .buy-tickets-title{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+padding-top: 40px;
+padding-bottom: 22px;
+  }
+  /* buy tickets end */
+  /* contacts start */
+  .contacts-title{
+    font-size: 40px;
+line-height: 60px;
+letter-spacing: 5px;
+  }
+  .contacts-header{
+    font-size: 20px;
+line-height: 23px;
+  }
+  .contacts-p{
+   
+font-size: 18px;
+line-height: 21px;
+  }
+  .contacts-flex{
+    display: block;
+  }
+  /* contacts end */
+}
+/* 768px end */
 /* 420px start */
 @media (max-width: 420px) {
 /* intro start */
 .header{
   height: 130px;
+  width: 420px;
 }
 .header-wrapper{
-  padding-bottom: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 380px;
 }
 .wrapper{
-  max-width: 420px;
+  width: 420px;
+}
+.wrapper.welcome-start{
+  margin-top: 0px;
 }
 .intro-title-1{
   font-family: "Forum";
@@ -1660,12 +1781,24 @@ line-height: 31px;
 letter-spacing: 5px;
 text-transform: uppercase;
 color: #FFFFFF;
+margin-bottom: 42px;
+}
+.intro-title-3{
+  font-family: "Roboto";
+  font-size: 16px;
+line-height: 19px;
+letter-spacing: 2px;
+color: #FFFFFF;
 }
 .wrapper.welcome-start{
+  margin-top: 130px;
   display: block;
 }
 /* intro end */
 /* virtual tour start */
+.virtual-tour-grid{
+  grid-template-columns: 1fr;
+}
 .virtual-title-text{
   font-family: "Forum";
   font-size: 28px;
@@ -1694,7 +1827,38 @@ color: #FFFFFF;
 }
 /* picture explore end */
 /* video journey start */
+.video{
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.video-controls{
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 17px;
+  padding-bottom: 18px;
+}
+.video-controls-slider{
+  padding-bottom: 0;
+}
+.video-controls-playButton{
+  display: none;
+  padding: 0;
+}
+.video-controls-playButton:last-child {
+  padding-right: 0;
+}
+.video-controls-playButton.video-controls-playButtonPlay{
+  display: block;
+}
+.video-controls-scroll1{
+  width: 195px;
+  margin-left: 0;
+}
+.video-controls-scroll2{
+  display: none;
+}
 .video-journey-title{
+  padding-bottom: 20px;
   font-size: 28px;
 line-height: 42px;
 letter-spacing: 5px;
@@ -1706,6 +1870,10 @@ color: #9D8665;
 }
 /* video journey end */
 /* art gallery start */
+.gallery-inner{
+  column-count: 2;
+  row-gap: 24px;
+}
 .gallery-text{
   font-size: 28px;
 line-height: 42px;
@@ -1716,6 +1884,7 @@ color: #FFFFFF;
 /* art gallery end */
 /* buy tickets start */
 .buy-tickets-title{
+  padding-top: 40px;
   font-size: 28px;
 line-height: 42px;
 letter-spacing: 5px;
@@ -1725,7 +1894,20 @@ color: #9D8665;
 .buy-tickets-main{
   display: block;
 }
+.buy-tickets-type{
+  padding-left: 40px;
+}
+.buy-tickets-amount{
+  align-items: flex-start;
+  padding-left: 40px;
+}
 /* buy tickets end */
+/* parallax start */
+.parallax{
+  background-image: url("./assets/img/parallax420.jpg");
+  height: 300px;
+}
+/* parallax end */
 /* contacts start */
 .contacts-title{
   font-size: 28px;
@@ -1734,8 +1916,23 @@ letter-spacing: 5px;
 text-transform: uppercase;
 color: #9D8665;
 }
+.contacts-head{
+  padding-top: 40px;
+}
 .contacts-flex{
   display: block;
+  margin-bottom: 40px;
+}
+.contacts-header{
+  font-size: 16px;
+line-height: 19px;
+}
+.contacts-p{
+  font-size: 16px;
+line-height: 19px;
+}
+.contacts-p:last-child{
+  padding-bottom: 50px;
 }
 /* contacts end */
 /* footer start */
